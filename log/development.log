@@ -922,3 +922,91 @@ Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-05 20:36:50 +0100
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-05 20:40:42 +0100
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2015-05-05 20:40:45 +0100
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ek/xYsj+oMDtFJTiM6IA5fZU0D5oNmSzgOoyPtMzHOpnK04eer/942HiQtDt0OkmhCtBHLU8HqloiIpEwGhDHw==", "id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 1]]
+  [1m[36m (563.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 567ms (ActiveRecord: 564.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-05 20:40:46 +0100
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/3" for 127.0.0.1 at 2015-05-05 20:40:47 +0100
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8p3Ytzyefd4HmZ/MGumo5E2OTKPDG+muxXBMIWDduwfv+WfLjt8g/YtvSf7Em0EnP/HdgR4Rk7QtEvRbc4bk8g==", "id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 3]]
+  [1m[35m (864.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 867ms (ActiveRecord: 864.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-05 20:40:48 +0100
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/articles/4" for 127.0.0.1 at 2015-05-05 20:40:50 +0100
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d36oRIMHbvRYPITNck0R5ysW5nOvLJOQZPlXwLkcbspqGhc4MUYz19TKUv+sP/gkWWl3UXIm6YqMm++6qkcxPw==", "id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 4]]
+  [1m[36m (576.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 579ms (ActiveRecord: 576.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-05 20:40:50 +0100
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.3ms)
